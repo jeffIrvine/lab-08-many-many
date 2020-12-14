@@ -29,7 +29,6 @@ describe('all routes for birds and nests', () => {
     });
   });
 
-
   it('finds a bird by id with get',  async() => {
     await Promise.all([
       { location: 'tree' },
@@ -50,7 +49,6 @@ describe('all routes for birds and nests', () => {
       nests: ['tree', 'log']
     });
   });
-
 
   it('finds all birds with get', async() => {
     const birds = await Promise.all([
