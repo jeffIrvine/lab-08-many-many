@@ -13,8 +13,8 @@ CREATE TABLE nests (
 );
 
 CREATE TABLE birds_nests (
-    birds_id BIGINT REFERENCES birds(id),
-    nests_id BIGINT REFERENCES nests(id),
-    PRIMARY KEY(birds_id, nests_id)
+    bird_id BIGINT REFERENCES birds(id),
+    nest_id BIGINT REFERENCES nests(id),
+    PRIMARY KEY(bird_id, nest_id)
  
 );
